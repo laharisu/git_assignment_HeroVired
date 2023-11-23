@@ -23,7 +23,7 @@ if __name__ == "__main__":
 {calculator.calculate_circle_area(radius)}")
 
 # TODO: Implement the feature to calculate the area of a rectangle 
-#length = 10
+length = 10
 
 width = 6
 
