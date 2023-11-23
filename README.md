@@ -1,5 +1,6 @@
 # git_assignment_HeroVired
 This Repo is to perform the GIT graded Assignment 
+**Question 1**
 # Create a new repository on GitHub named "git_assignment_HeroVired"
 
 b. Create a ‘dev’ branch and add the code:
@@ -85,3 +86,116 @@ git tag -a v2.0 -m "Version 2.0 release"
 
 # Push changes to the remote repository
 git push origin main --tags
+
+
+**Question 2:**
+
+
+
+
+Step 1: Initialize Git LFS in your Repository
+
+git lfs install
+.
+
+Step 2: Track Binary Files with Git LFS
+
+git lfs track "*.pdf"
+
+
+Step 3: 
+Add and Commit Binary Files
+git add lfstry.pdf
+
+Step 4: git commit -m "Add binary file using Git LFS"
+
+Step 5: git push origin master
+
+Step 6: git clone https://github.com/laharisu/git_assignment_HeroVired.git
+
+Step 7: Verify Binary File Download
+git lfs pull
+
+
+**Question 3:**
+
+Step 1: Create a New Branch for Circle Area Feature
+
+git checkout main
+
+# Create a new branch for the circle area feature
+git checkout -b feature/circle-area
+
+Step 2: Stash Changes for Circle Area Feature
+
+# Stash changes
+git stash
+
+# Verify working directory is clean
+git status
+
+Step 3: Create a New Branch for Rectangle Area Feature
+
+# Switch back to the main branch
+git checkout main
+
+# Create a new branch for the rectangle area feature
+git checkout -b feature/rectangle-area
+
+Step 4: Stash Changes for Rectangle Area Feature
+bash
+Copy code
+# Stash changes
+git stash
+
+# Verify working directory is clean
+git status
+Step 5: Switch Back to Circle Area Branch and Retrieve Stashed Changes
+bash
+Copy code
+# Switch back to the circle area branch
+git checkout feature/circle-area
+
+# Retrieve stashed changes
+git stash apply
+Step 6: Complete Circle Area Feature Implementation
+Make the necessary changes to complete the circle area feature.
+
+bash
+Copy code
+# Add changes to the staging area
+git add .
+
+# Commit changes
+git commit -m "Complete circle area feature implementation"
+
+# Push changes to remote repository
+git push origin feature/circle-area
+Step 7: Switch Back to Rectangle Area Branch and Retrieve Stashed Changes
+
+# Switch back to the rectangle area branch
+git checkout feature/rectangle-area
+
+# Retrieve stashed changes
+git stash apply
+
+Step 8: Complete Rectangle Area Feature Implementation
+Make the necessary changes to complete the rectangle area feature.
+
+
+# Add changes to the staging area
+git add .
+
+# Commit changes
+git commit -m "Complete rectangle area feature implementation"
+
+# Push changes to remote repository
+git push origin feature/rectangle-area
+Step 9: Create Pull Requests
+Create pull requests for both branches (feature/circle-area and feature/rectangle-area) into the dev branch.
+
+Step 10: Review and Merge
+Have another team member or reviewer review your pull requests.
+After receiving approval, merge both pull requests into the main branch.
+These steps provide a clear sequence of actions for updating the program and integrating new features into the main branch.
+
